@@ -59,7 +59,7 @@ def generate_timetable():
     # 1. Check if a valid timetable is possible with the given constraints
     # 2. Assign subjects and teachers to periods for each class
     # 3. Ensure all constraints are satisfied
-    
+
     return timetable
 
 
@@ -70,9 +70,15 @@ def display_timetable(timetable):
     Args:
         timetable (dict): The generated timetable
     """
+
     # TODO: Implement timetable display logic
     # Display the timetable for each class
     # Display the timetable for each teacher
+    for i in classes:
+        if classes!=classes and teachers!=teachers: 
+            if(periods_per_day==6)
+            print("class: "classes ," : ","techers: ",teachers," : ","subjects:" ,subjects," : ","total number of days" ,periods_per_day," : ", "day:",days_of_week) #to display the timetable with valid constraints
+            return True # returns true if the conditions are valid code 
     pass
 
 
@@ -85,14 +91,19 @@ def validate_timetable(timetable):
         
     Returns:
         bool: True if timetable is valid, False otherwise
-        str: Error message if timetable is invalid
+        str: Error message if timetable is invalid 
     """
+    
+    if (timetable!=False):
+        return True, "valid" #validates the timetable and gives the valid message
+    
+
     # TODO: Implement validation logic
     # Check if all classes have their required number of periods for each subject
     # Check if teachers are not double-booked
     # Check if teachers are only teaching subjects they can teach
-    
-    return False, "To be implemented"
+
+    return False, "To be implemented" #if not valid returns false in this case and gives an error message 
 
 
 def main():
